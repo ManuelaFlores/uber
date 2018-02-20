@@ -1,0 +1,26 @@
+{
+  "name": "uber",
+  "version": "1.0.0",
+  "description": "Un estimador de tarifa de un viaje en Uber",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d public/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Escobar-Flores/uber.git"
+  },
+  "keywords": [
+    "uber"
+  ],
+  "author": "Rocci Escobar y Manuela FLores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Escobar-Flores/uber/issues"
+  },
+  "homepage": "https://github.com/Escobar-Flores/uber#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
