@@ -11,10 +11,12 @@ function initMap() {
   });
 
   directionsDisplay.setMap(map);
-  // Añade marcador
+
+  // Añade marcador de autos
   var myMarker = new google.maps.Marker({
     position: location,
-    map: map
+    map: map,
+    icon: 'assets/icons/auto1.png'
   });
 
   // Obtener ubicación actual de usuario
@@ -46,7 +48,6 @@ var calculateAndDisplayRoute = function calculateAndDisplayRoute(directionsServi
   }, function (response, status) {
     if (status === 'OK') {
       directionsDisplay.setDirections(response);
-      console.log(response);
     } else {
       window.alert('Estamos teniendo inconvenientes para encontrar su ubicación');
     }
@@ -55,12 +56,3 @@ var calculateAndDisplayRoute = function calculateAndDisplayRoute(directionsServi
     document.getElementById('final-point').value = '';
   });
 };
-
-// Añade marcador de autos
-var auto1 = 'assets/icons/auto1.png';
-var autoMarker = new google.maps.Marker({
-  position: { lat: myLatit,
-    lng: myLongit },
-  map: map,
-  icon: image
-});

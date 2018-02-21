@@ -6,12 +6,6 @@ main {
   height: 100vh;
 }
 
-@media (min-width: 576px) {
-  .w-400 {
-    width: 400px;
-  }
-}
-
 #map{
   height: 100%;
 }

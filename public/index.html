@@ -10,55 +10,46 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
-    <nav class="navbar navbar-light bg-light" style="background-color: #e3f2fd;">
+  <body class="container-fluid">
+    <nav class="navbar navbar-light bg-light row" style="background-color: #e3f2fd;">
       <a class="navbar-brand font-weight-bold" href="#">FARE ESTIMATE</a>
     </nav>
-    <div class="row no-gutters">
-      <div class="col-6">
-          <main class="bg-danger w-100" id="">
-              <section>
-                <br>
-                <div class="card w-400 mx-3">
-                  <div class="card-body">
-                    <h5 class="card-title font-weight-bold">Estimador de tarifas Uber</h5>
-                    <p class="card-text">¿Cuál es el costo de viajes Uber en tu ciudad? Calcula una tarifa para tu próximo viaje. Simplemente ingresa un punto de partida y un destino para comenzar.</p>
+    <main class="bg-danger row">
+      <section class="col-12 col-sm-5">
+        <br>
+        <div class="card mx-3">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold">Estimador de tarifas Uber</h5>
+            <p class="card-text">¿Cuál es el costo de viajes Uber en tu ciudad? Calcula una tarifa para tu próximo viaje. Simplemente ingresa un punto de partida y un destino para comenzar.</p>
+          </div>
+        </div>
+        <br>
+        <div class="card mx-3">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="start-point" placeholder="Ingresa el punto de partida">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-location-arrow"></i></div>
                   </div>
                 </div>
-                <br>
-                <div class="card w-400 mx-3">
-                  <div class="card-body">
-                    <form>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <input type="text" class="form-control" id="start-point" placeholder="Ingresa el punto de partida">
-                          <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="fas fa-location-arrow"></i></div>
-                          </div>
-                        </div>
-                      </div>         
-                      <div class="form-group">
-                        <div class="input-group">
-                          <input type="text" class="form-control" id="final-point" placeholder="Ingresa un destino">
-                          <div class="input-group-prepend">
-                            <button type="submit" class="btn btn-danger" id="route"><i class="fas fa-arrow-right"></i></button>
-                          </div>
-                        </div>            
-                      </div>
-                    </form>
+              </div>         
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="final-point" placeholder="Ingresa un destino">
+                  <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-danger" id="route"><i class="fas fa-arrow-right"></i></button>
                   </div>
-                </div>
-              </section>
-            </main>
-
-      </div>
-      <div class="col-6">
-          <section id="map" class="w-100"></section>
-      </div>
-    </div>
-    
-    
-
+                </div>            
+              </div>
+            </form>
+          </div>
+        </div>
+        <br>
+      </section>
+      <section id="map" class="col-12 col-sm-7"></section>
+    </main>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZmApOQc5xq5rLmkqiOpGG7sqcs7_Z7L4&callback=initMap&libraries=places"
