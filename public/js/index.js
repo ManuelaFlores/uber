@@ -47,11 +47,16 @@ var calculateAndDisplayRoute = function calculateAndDisplayRoute(directionsServi
     travelMode: 'DRIVING'
   }, function (response, status) {
     if (status === 'OK') {
+      var distance = Number(response.routes[0].legs[0].distance.text.replace('km', '').replace(',', '.'));
+      console.log(response);
+      console.log(distance);
       directionsDisplay.setDirections(response);
     } else {
       window.alert('Estamos teniendo inconvenientes para encontrar su ubicación');
     }
     // document.querySelector('.description-js').innerHTML = 'Punto de origen: ' + document.getElementById('start-point').value + '<br>' + 'Punto de llegada: ' + document.getElementById('final-point').value ;
+
+
     document.getElementById('start-point').value = '';
     document.getElementById('final-point').value = '';
   });
