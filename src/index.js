@@ -16,7 +16,7 @@ function initMap() {
     map: map,
     icon: 'assets/icons/auto1.png'
   }); 
-
+  
   // Obtener ubicación actual de usuario
   function search() {
     if (navigator.geolocation) {
@@ -35,6 +35,14 @@ function initMap() {
   let getRoute = (event) => {
     event.preventDefault();
     calculateAndDisplayRoute(directionsService, directionsDisplay);
+    let containerTable = document.querySelector('.table-container-js');
+    containerTable.classList.remove('d-none');
+    containerTable.classList.add('d-block');
+    let items = document.querySelectorAll('.item-js');
+    for (let i = 0 ; i < items.length;i++) {
+      var distance = localStorage.getItem('distance');
+      items[i].textContent = 'S/.' + (prices[i].estimate * distance).toFixed(2) ;
+    };
   };
   document.getElementById('route').addEventListener('click', getRoute);
 }
@@ -47,15 +55,11 @@ let calculateAndDisplayRoute = (directionsService, directionsDisplay) => {
   }, function(response, status) {
     if (status === 'OK') {
       let distance = Number((response.routes[0].legs[0].distance.text.replace('km', '')).replace(',', '.'));
-      console.log(response);
-      console.log(distance);
+      localStorage.distance = distance;
       directionsDisplay.setDirections(response);
     } else {
       window.alert('Estamos teniendo inconvenientes para encontrar su ubicación');
-    }
-    // document.querySelector('.description-js').innerHTML = 'Punto de origen: ' + document.getElementById('start-point').value + '<br>' + 'Punto de llegada: ' + document.getElementById('final-point').value ;
-   
-    
+    }   
     document.getElementById('start-point').value = '';
     document.getElementById('final-point').value = '';
   });
