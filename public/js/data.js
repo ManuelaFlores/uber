@@ -8,8 +8,8 @@
       'high_estimate': 15,
       'low_estimate': 13,
       'duration': 1080,
-      'estimate': '$13-14',
-      'currency_code': 'USD'
+      'estimate': '14',
+      'currency_code': 'S/.'
     },
     {  
       'localized_display_name': 'uberX',
@@ -19,30 +19,8 @@
       'high_estimate': 17,
       'low_estimate': 13,
       'duration': 1080,
-      'estimate': '$13-17',
-      'currency_code': 'USD'
-    },
-    {
-      'localized_display_name': 'uberXL',
-      'distance': 6.17,
-      'display_name': 'uberXL',
-      'product_id': '821415d8-3bd5-4e27-9604-194e4359a449',
-      'high_estimate': 26,
-      'low_estimate': 20,
-      'duration': 1080,
-      'estimate': '$20-26',
-      'currency_code': 'USD'
-    },
-    {
-      'localized_display_name': 'SELECT',
-      'distance': 6.17,
-      'display_name': 'SELECT',
-      'product_id': '57c0ff4e-1493-4ef9-a4df-6b961525cf92',
-      'high_estimate': 38,
-      'low_estimate': 30,
-      'duration': 1080,
-      'estimate': '$30-38',
-      'currency_code': 'USD'
+      'estimate': '15',
+      'currency_code': 'S/.'
     },
     {
       'localized_display_name': 'BLACK',
@@ -52,30 +30,8 @@
       'high_estimate': 43,
       'low_estimate': 43,
       'duration': 1080,
-      'estimate': '$43.10',
-      'currency_code': 'USD'
-    },
-    {
-      'localized_display_name': 'SUV',
-      'distance': 6.17,
-      'display_name': 'SUV',
-      'product_id': '8920cb5e-51a4-4fa4-acdf-dd86c5e18ae0',
-      'high_estimate': 63,
-      'low_estimate': 50,
-      'duration': 1080,
-      'estimate': '$50-63',
-      'currency_code': 'USD'
-    },
-    {
-      'localized_display_name': 'ASSIST',
-      'distance': 6.17,
-      'display_name': 'ASSIST',
-      'product_id': 'ff5ed8fe-6585-4803-be13-3ca541235de3',
-      'high_estimate': 17,
-      'low_estimate': 13,
-      'duration': 1080,
-      'estimate': '$13-17',
-      'currency_code': 'USD'
+      'estimate': '43',
+      'currency_code': 'S/.'
     },
     {
       'localized_display_name': 'WAV',
@@ -86,18 +42,7 @@
       'low_estimate': 25,
       'duration': 1080,
       'estimate': '$25-33',
-      'currency_code': 'USD'
-    },
-    {
-      'localized_display_name': 'TAXI',
-      'distance': 6.17,
-      'display_name': 'TAXI',
-      'product_id': '3ab64887-4842-4c8e-9780-ccecd3a0391d',
-      'high_estimate': null,
-      'low_estimate': null,
-      'duration': 1080,
-      'estimate': 'Metered',
-      'currency_code': null
+      'currency_code': 'S/.'
     }
   ];
 }
